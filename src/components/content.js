@@ -2,7 +2,7 @@ import { Header } from "./header";
 import { Footer } from "./footer";
 export function Content(){
     
-    let weirdos = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+    let weirdos = [1,2,3,4,5,6,7]
 
     return( 
     <>
@@ -103,12 +103,8 @@ export function Content(){
                  <div className="weirdos" id="weirdosAll">
                 {weirdos.map((i)=>{
                     return( 
-                        <div className="emptyWeirdo crossW">
-                            <img src={"res/13.png"} alt="weirdo" ></img>
-                            <div className="yellowBand">Weirdo {i}</div>
-                            <div className="weirdMessage">
-                                "random message lorem ipsum, dolor sit amet"
-                            </div>     
+                        <div className="emptyWeirdo crossW" key={i} >
+                            <img src={`/res/${i}.jpeg`} alt="weirdo" ></img>
                         </div>
                     )
 
