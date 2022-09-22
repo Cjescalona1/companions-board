@@ -1197,20 +1197,23 @@ Animations
     margin-left: -3px; 
 }
 .weirdos{
-    margin-top: calc(9em + 5%);
-    width: 95%;
-    height: 30em;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5em 0em;
+  margin-top: calc(9em + 5%);
+  width: 85%;
+  height: 29em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em 0em;
+  top: 1em;
+  position: relative;
+  left: 0em;
 }
 .emptyWeirdo{
-  height: 14.5em;
-  width: 10.5em;
-  position: relative; 
-  border-radius: 3px; 
+  height: 14em;
+  width: 10em;
+  position: relative;
+  border-radius: 3px;
   border-width: 1.5px;
 }
 .weirdMessage{
@@ -1468,7 +1471,7 @@ Animations
 .weirdos{
   margin-top: calc(5em + 5%);
   width: 80%;
-  height: 31em;
+  height: 33em;
   overflow-y: scroll;
   overflow-x: hidden;
   display: grid;
@@ -1504,7 +1507,7 @@ Animations
   }
 
   .emptyWeirdo{
-      height: 14.5em;
+      height: 15.5em;
       width: 10.5em;
       position: relative;  
       border-radius: 3px; 
