@@ -14,6 +14,14 @@ export function Content(){
         </a></div>
             <div className="leftBox">
                 <div className="leftBoxContent">
+                        
+               
+                <div id="Your_WeirdosD" className="tooltip"> 20/20
+                        <div class="rightQ hideMob">
+                            <p>Your Companions / your Companions staked </p>
+                            <i></i>
+                        </div>
+                </div>
                     <div className="statistics">Statistics:</div>
                     <div class="statisticList ">
                     <div class="statBox tooltip">
@@ -90,16 +98,14 @@ export function Content(){
                         <i></i>
                     </div>                
                 </div>  
+                 <div id="WalletD" >Your Wallet :11111111111111111111111</div> 
                 </div>
             </div>
 
             <div className="separator"></div>
             <div className="rightBox">
             <div className="rightBoxContent" id="rightBoxContent">
-                
-                <div id="WalletD" >11111111111111111111111</div> 
-                <div id="Your_WeirdosD"> 20/20
-                </div>
+            
                  <div className="weirdos" id="weirdosAll">
                 {weirdos.map((i)=>{
                     return( 
