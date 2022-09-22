@@ -31,9 +31,8 @@
     display: none;
   }
   
-  .headerBar{
-  
-    background-color: #24063f;
+  .headerBar{ 
+    background-color: #284d56;
     padding: 2em 0em;
     border-bottom: #fecd19 2px solid;
     height: 2.4em;
@@ -219,7 +218,7 @@ body{
     grid-gap: 0.5em;
   }
   .emptyWeirdo{
-    height: 14.5em;
+    height: 16em;
     width: 10.5em;
     position: relative;  
   }
@@ -289,12 +288,7 @@ body{
     width: 70%;
     margin: 1% 15% -2px;
   }
-  .headerBar{
-    background-color: #24063f;
-    padding: 2em 0em;
-    border-bottom: #fecd19 2px solid;
-    height: 2.4em;
-  }
+   
   .navItems{
     display: flex;
     padding: 0;
@@ -324,14 +318,14 @@ body{
   }
   ::-webkit-scrollbar-thumb{
     width: 0.5em;
-    background-color: rgb(57, 243, 73);
+    background-color: #faff7e;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-track{
     background-color: #273e45;
     }
   .cummulative{
-    background-color: #493362;
+    background-color: #406f7a;
     color: #a2faab !important;
     vertical-align: middle;
     text-align: center;
@@ -355,7 +349,7 @@ body{
   
   .claimButton{
     position: relative;
-    background-color: #35f049;
+    background-color: #fae240;
     height: 2.4em;
     vertical-align: middle;
     font-weight: 600;
@@ -383,7 +377,7 @@ body{
   
   .foot {
     position: relative !important;
-    background-color: #10011f;
+    background-color: #18242a;
     width: 100vw;
     padding: 0em;
     display: block;
@@ -1197,9 +1191,9 @@ Animations
     margin-left: -3px; 
 }
 .weirdos{
-  margin-top: calc(9em + 5%);
+  margin-top: calc(7em + 5%);
   width: 85%;
-  height: 29em;
+  height: 33em;
   overflow-y: scroll;
   overflow-x: hidden;
   display: grid;
@@ -1210,8 +1204,8 @@ Animations
   left: 0em;
 }
 .emptyWeirdo{
-  height: 14em;
-  width: 10em;
+  height: 16em;
+  width: 10.5em;
   position: relative;
   border-radius: 3px;
   border-width: 1.5px;
@@ -1281,8 +1275,7 @@ Animations
     width: 99.1% !important;
 }
 .foot {
-    position: absolute;
-    background-color: #10011f;
+    position: absolute; 
     width: 100vw;
     padding: 0em;
     display: block;
@@ -1507,7 +1500,7 @@ Animations
   }
 
   .emptyWeirdo{
-      height: 15.5em;
+      height: 16em;
       width: 10.5em;
       position: relative;  
       border-radius: 3px; 
@@ -1572,8 +1565,7 @@ Animations
   }
 
   .foot {
-      position: absolute;
-      background-color: #10011f;
+      position: absolute; 
       width: 100vw;
       padding: 0em;
       display: block;
@@ -1791,8 +1783,7 @@ Animations
       margin: 3% 3% -2% 3%;
   }
   .foot {
-      position: absolute;
-      background-color: #10011f;
+      position: absolute; 
       width: 100vw;
       padding: 0em;
       display: block;
