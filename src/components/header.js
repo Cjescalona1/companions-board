@@ -18,8 +18,7 @@ export function Header(){
                             <li><a href="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc586a4a0db0bc1169d490b8fbf0633cc06d0f0d3" to="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc586a4a0db0bc1169d490b8fbf0633cc06d0f0d3">Token</a></li>
                             <li><a href="#foot" id="goFoot" >FAQ</a></li>
                             <li><a href="void(0)" to="#" id="aprobar" onClick="NftApro()">Approve Stake</a></li>
-                            <li><a href="void(0)" to="#" id="token" onClick="aprovartoken()">Approve Token</a></li>
-                            <li><a href="void(0)" to="#" id="special" onClick="NftApro2()">Approve Special</a></li>
+                            <li><a href="void(0)" to="#" id="token" onClick="aprovartoken()">Approve Token</a></li> 
 
                             <li className="uwuClaim " ><div className="cummulative" id="Your_Reward"> </div> <a href="void(0)" to="#">
                                 <div className="claimButton hide" onClick="Claim()"   id="Claim">Claim Rewards</div>
