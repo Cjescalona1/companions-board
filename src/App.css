@@ -811,7 +811,12 @@ Animations
   height: 100%;
   border-radius: 12px;
 }
-
+.CBtop{
+  margin-top: -0.5em;
+}
+.CBtop>*{
+  text-decoration: none;
+}
 @media screen and (max-width:767px) {
     .BM{
       background-color: red;
@@ -922,16 +927,18 @@ Animations
       background-size: 100% 100%;    
       width: 100%;
       text-align: center;
-      margin-left: 2%;
+      margin-left: 0%;
   }
   .separator{
       display: none;
   }
   .rightBox{
-      width: 90%;
-      background-image: none;
-      margin: auto;
-      margin-top: 0 !important;
+    width: 85%;
+    background-image: none;
+    margin: auto;
+    margin-top: 0 !important;
+    left: -2.5em;
+    position: relative;
    
   }
   .rightBoxContent {

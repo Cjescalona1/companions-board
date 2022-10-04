@@ -65,7 +65,7 @@ export function Footer(){
             </div>
             
         </div>
-        <div class="devil ">
+        <div className="devil ">
             <img src="res/evildevils.png" alt=""></img>
         </div>
     </div>

@@ -1,6 +1,11 @@
-import { useState } from "react"; 
+import { useState } from "react";    
+import useSound from "use-sound";
+import Jforest from "../../src/Japanese-Forest.mp3"
 
 export function Header(){
+
+    const [play, {pause}] = useSound(Jforest);
+    const [onOff, setOnOff] = useState(true);
     const[show,setShow]=useState(false);
     return(
         <>  
@@ -17,8 +22,16 @@ export function Header(){
                             <li><a href="https://opensea.io/collection/underworldweirdos-main" to="https://opensea.io/collection/underworldweirdos-main">Collection</a></li>
                             <li><a href="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc586a4a0db0bc1169d490b8fbf0633cc06d0f0d3" to="https://quickswap.exchange/#/swap?inputCurrency=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&outputCurrency=0xc586a4a0db0bc1169d490b8fbf0633cc06d0f0d3">Token</a></li>
                             <li><a href="#foot" id="goFoot" >FAQ</a></li>
-                            <li><a href="void(0)" to="#" id="aprobar" onClick="NftApro()">Approve Stake</a></li>
-                            <li><a href="void(0)" to="#" id="token" onClick="aprovartoken()">Approve Token</a></li> 
+                            <li> 
+                            <div className="claimButton CBtop">
+                            <a href="void(0)" to="#" id="aprobar" onClick="NftApro()">Approve Stake</a>
+                            </div>
+                            </li>
+                            <li>
+                            <div className="claimButton CBtop">
+                                <a href="void(0)" to="#" id="token" onClick="aprovartoken()">Approve Token</a>
+                            </div>
+                            </li> 
 
                             <li className="uwuClaim " ><div className="cummulative" id="Your_Reward"> </div> <a href="void(0)" to="#">
                                 <div className="claimButton hide" onClick="Claim()"   id="Claim">Claim Rewards</div>
@@ -38,34 +51,46 @@ export function Header(){
                                     <img src="res/62fca5fabaea0e6f942eea96_af-insta-icon.svg" alt=""></img>
                                 </a>
                             </li>
-                            <li > 
-                                <div id="toggleAudio" className="mute" onClick="toggleMuted()"> </div>
+                            <li> 
+                                {onOff?
+                                <div onClick={()=>{setOnOff(!onOff)}}>
+                                    <div id="toggleAudio" className="mute" onClick={play}> 
+                                    </div>
+                                </div>
+                                :
+                                <div onClick={()=>{setOnOff(!onOff)}}>
+                                    <div id="toggleAudio" className="unmute" onClick={()=>{pause()}}> 
+                                    </div>
+                                </div>
+
+                                }
+                                
                             </li>
                         </ul>
-                        <img src="res/Logo-02.png" class="logoMov hideDesktop" alt=""></img>
+                        <img src="res/Logo-02.png" className="logoMov hideDesktop" alt=""></img>
                         <div className="toggleButton" onClick={()=>setShow(!show)} >
-                        <label for="toggle" class="hamburger  hideDesktop ">
-                        <div class="top-bun"></div>
-                        <div class="meat"></div>
-                        <div class="bottom-bun"></div>
+                        <label htmlfor="toggle" className="hamburger  hideDesktop ">
+                        <div className="top-bun"></div>
+                        <div className="meat"></div>
+                        <div className="bottom-bun"></div>
                         </label>
                         </div>
                         
 
                 {
                 show?
-                <div class="nav-wrapper">
+                <div className="nav-wrapper">
                 <div>
                 <div className="toggleButton" onClick={()=>setShow(!show)} >
                     <div className="hamburger">
                         <img src="res/Iconos-09.png" alt="close"></img>
                     </div>
                 </div>
-                    <ul class="mobUL">
+                    <ul className="mobUL">
                         
-                        <div class="walletTitle" >Your wallet</div>
+                        <div className="walletTitle" >Your wallet</div>
                         <div id="Wallet" className="hide" >wallet </div>
-                        <div class="stakedTitle">Your weirdos staked</div>
+                        <div className="stakedTitle">Your weirdos staked</div>
                         <div id="Your_Weirdos" className="hide"></div>    
                         <li>
                             <a href="https://underworldweirdos.com/">Weirdos Who?</a>
@@ -84,31 +109,45 @@ export function Header(){
                         </li>
                         
                         
-                        <li><a href="void(0)" id="aprobarM" onclick="NftApro()">Approve Stake</a></li>
-                        <li><a href="void(0)" id="tokenM" onclick="aprovartoken()">Approve Token</a></li>
-                        <li><a href="void(0)" id="specialM" onclick="NftApro2()">Approve Special</a></li>
+                        <li> 
+                            <div className="claimButton">
+                            <a href="void(0)" id="aprobarM" onclick="NftApro()">Approve Stake</a>
+                            </div>
+                        </li>     
+
+                        <li> 
+                            <div className="claimButton">
+                            <a href="void(0)" id="tokenM" onclick="aprovartoken()" >Approve Token</a>
+                            </div>    
+                        </li>
+                        <li> 
+                            <div className="claimButton">
+                            <a href="void(0)" id="specialM" onclick="NftApro2()"   >Approve Special</a>
+                            </div>    
+                        </li>
                         
 
-                        <div class="contMobSocialButtons">
-                            <li class="socialButtons mobSocialButtons"><a href="void(0)">
+                        <div className="contMobSocialButtons">
+                            <li className="socialButtons mobSocialButtons"><a href="void(0)">
                                 <img src="res/62fca40cea0f2647f8c1e172_af-discord-logo.png" alt=""></img>
                             </a>
                             </li>
-                            <li class="socialButtons mobSocialButtons"><a href="void(0)">
+                            <li className="socialButtons mobSocialButtons"><a href="void(0)">
                                 <img src="res/62fca4a04544ed44ab2aa247_twitter-svgrepo-com.svg" alt=""></img>
                             </a>
                             </li>
-                            <li class="socialButtons mobSocialButtons" ><a href="void(0)">
+                            <li className="socialButtons mobSocialButtons" ><a href="void(0)">
                                 <img src="res/62fca5fabaea0e6f942eea96_af-insta-icon.svg" alt=""></img>
                             </a>
                             </li>
                         </div> 
                     </ul>  
-                </div>
+                </div> 
             </div> 
             :
             null
             } 
+        
         </div>
         </>     
     )       
